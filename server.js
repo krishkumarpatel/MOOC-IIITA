@@ -67,9 +67,9 @@ app.get("*", (req, res) =>
   res.sendFile(path.join(__dirname, "/client/dist/index.html"))
 );
 
-
+// Enter DB URL
 mongoose
-  .connect('mongodb+srv://tmkoc6465:O0QXw5vqFdPI4olt@kp.dirye.mongodb.net/test')
+  .connect('')
   .then(() => {
     console.log("Connected to the database");
 
